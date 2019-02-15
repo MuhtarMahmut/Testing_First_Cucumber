@@ -6,7 +6,8 @@ Feature: Smoke Tests for yahoo
 
     Examples:
       |  username | password |
-      | Muhtar.Mahmut0519@gmail.com | password1 |
-      | Muhtar.Mahmut0519@yahoo.com | Muhtar05190707 |
-      | mmmmmmmmm                   | "112312312"      |
+      |Muhtar.Mahmut0519@gmail.com| password1|
+      |Muhtar.Mahmut0519@yahoo.com| Muhtar05190707 |
+      |mmmmmmmmm                   | 112312312     |
+      |jjjjj                       | 1223111       |
 

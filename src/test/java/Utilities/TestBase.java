@@ -16,11 +16,13 @@ public class TestBase {
 
 
     public void SetUp(){
+
         mylib=new Libraries(driver);
         action=new Actions(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         wait =new WebDriverWait(driver,10);
+
     }
 }
