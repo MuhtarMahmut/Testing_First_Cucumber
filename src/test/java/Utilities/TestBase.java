@@ -19,8 +19,8 @@ public class TestBase {
         mylib=new Libraries(driver);
         action=new Actions(driver);
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         wait =new WebDriverWait(driver,10);
     }
 }

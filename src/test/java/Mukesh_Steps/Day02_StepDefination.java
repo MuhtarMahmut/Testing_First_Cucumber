@@ -3,6 +3,7 @@ package Mukesh_Steps;
 import Utilities.TestBase;
 import cucumber.api.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
@@ -19,16 +20,13 @@ public class Day02_StepDefination extends TestBase {
         driver=new ChromeDriver();
         driver.get("https://accounts.google.com");
             SetUp();
+
     }
 
     @When("I Enter Valid {string} and valid {string}")
     public void i_Enter_Valid_and_valid(String username, String password) {
-      SetUp();
-      mylib.sendkesy(Email,username);
-      mylib.click(NextAfterEmail);
-      mylib.sendkesy(PassWord,password);
-      mylib.click(NextAfterPassWord);
-
+      mylib.sendkesy(Email,username+ Keys.ENTER);
+      mylib.sendkesy(PassWord,password+ Keys.ENTER);
 
     }
 
